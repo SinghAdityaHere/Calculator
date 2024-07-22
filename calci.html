@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calci.css">
+</head>
+<body>
+
+  <div class="calci">
+    <input type="text" id="display" readonly>
+    <div class="button-container">
+      <button class="button" onclick="cvalue='';
+       document.querySelector('#display').value=cvalue">C</button>
+      <button class="button" onclick="cvalue= cvalue+ '1'
+       document.querySelector('#display').value=cvalue;">1</button>
+      <button class="button" onclick="cvalue= cvalue+ '2'
+       document.querySelector('#display').value=cvalue">2</button>
+      <button class="button" onclick="cvalue = cvalue + '+';document.querySelector('#display').value = cvalue">+</button>
+      <button class="button" onclick="cvalue= cvalue+ '3'
+       document.querySelector('#display').value=cvalue">3</button>
+      <button class="button" onclick="cvalue= cvalue+ '4'
+       document.querySelector('#display').value=cvalue">4</button>
+      <button class="button" onclick="cvalue= cvalue+ '-'
+       document.querySelector('#display').value=cvalue">-</button>
+      <button class="button" onclick="cvalue= cvalue+ '5'
+       document.querySelector('#display').value=cvalue">5</button>
+      <button class="button" onclick="cvalue= cvalue+ '6'
+       document.querySelector('#display').value=cvalue">6</button>
+      <button class="button" onclick="cvalue= cvalue+ '*'
+       document.querySelector('#display').value=cvalue">*</button>
+      <button class="button" onclick="cvalue= cvalue+ '7'
+       document.querySelector('#display').value=cvalue">7</button>
+      <button class="button" onclick="cvalue= cvalue+ '8'
+       document.querySelector('#display').value=cvalue">8</button>
+      <button class="button" onclick="cvalue= cvalue+ '/'
+       document.querySelector('#display').value=cvalue">/</button>
+      <button class="button" onclick="cvalue= eval(cvalue) 
+       document.querySelector('#display').value=cvalue">=</button>
+      <button class="button" onclick="cvalue= cvalue+ '9'
+       document.querySelector('#display').value=cvalue">9</button>
+      <button class="button" onclick="cvalue= cvalue+ '0'
+       document.querySelector('#display').value=cvalue">0</button>
+      <button class="button" onclick="cvalue= cvalue+ '.'
+       document.querySelector('#display').value=cvalue">.</button>
+    </div>
+  </div>
+
+  <script>
+    let cvalue='';
+    document.querySelector('#display').value=cvalue
+  </script>
+</body>
+</html>
